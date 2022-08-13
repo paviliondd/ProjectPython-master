@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>News</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container">
+                <a class="navbar-brand logo" href="{{ url_for('home') }}">Home</a>
+                <a class="navbar-brand logo" href="{{ url_for('news') }}">News</a>
+                <a class="navbar-brand logo" href="{{ url_for('profile') }}">Profile</a>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto"></ul>
+
+            </div>
+                <a class="navbar-brand logo" href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </nav>
+    <main class="page blog-post-list">
+        <section class="clean-block clean-blog-list dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">News</h2>
+                </div>
+                <div class="block-content">
+                    <div class="clean-blog-post">
+                        <div class="row">
+                            <div class="col-lg-5"><img class="rounded img-fluid" src="/static/assets/img/Covid19/thuoc-molnupiravir.jpeg"></div>
+                            <div class="col-lg-7">
+                                <h3>Bộ Y tế thông tin hiệu quả của thuốc Molnupiravir trong điều trị có kiểm soát bệnh nhân COVID-19 thể nhẹ</h3>
+                                <div class="info"><span class="text-muted">06/11/2021 11:08 (GMT+7)</span></div>
+                                <p>Các kết quả báo cáo giữa kỳ của chương trình thí điểm điều trị có kiểm soát thuốc Molnupiravir cho các trường hợp mắc COVID-19 thể nhẹ tại 22 tỉnh/thành phố cho thấy thuốc có tính an toàn cao, dung nạp tốt, hiệu quả rõ rệt về giảm tải lượng virus, giảm lây lan, giảm chuyển nặng, rút ngắn thời gian điều trị...</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clean-blog-post">
+                        <div class="row">
+                            <div class="col-lg-5"><img class="rounded img-fluid" src="/static/assets/img/Covid19/tiem-vaccine.jpg"></div>
+                            <div class="col-lg-7">
+                                <h3>Khẩn: Bộ Y tế yêu cầu các địa phương đảm bảo an toàn tiêm chủng; xử lý nghiêm vi phạm</h3>
+                                <div class="info"><span class="text-muted">06/11/2021 06:23 (GMT+7)</span></div>
+                                <p>Theo Bộ Y tế, vẫn còn một số địa phương, một số cơ sở tiêm chủng chưa thực hiện nghiêm các hướng dẫn trong tiêm vaccine phòng COVID-19 cũng như trong tiêm chủng thường xuyên dẫn đến một số sai sót đáng tiếc xảy ra.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clean-blog-post">
+                        <div class="row">
+                            <div class="col-lg-5"><img class="rounded img-fluid" src="/static/assets/img/Covid19/xet-nghiem-covid-9.jpeg"></div>
+                            <div class="col-lg-7">
+                                <h3>Chiều 5/11: Trên 86,4 triệu liều vaccine phòng COVID-19 đã được tiêm; 13 tỉnh đã tiêm mũi 1 trên 95%</h3>
+                                <div class="info"><span class="text-muted">05/11/2021 03:07 (GMT+7)</span></div>
+                                <p>SKĐS - Thống kê theo số thực trên Cổng thông tin tiêm chủng cho biết, đến 14h30 ngày 5/11, cả nước đã tiêm được hơn 86,4 triệu liều vaccine phòng COVID-19; 13 tỉnh đã tiêm mũi 1 trên 95%; Nhiều tỉnh ghi nhận F0 trong cộng đồng gia tăng; Bắc Giang tạm dừng một số hoạt động từ ngày 6/11.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clean-blog-post">
+                        <div class="row">
+                            <div class="col-lg-5"><img class="rounded img-fluid" src="/static/assets/img/Covid19/laymau.jpg"></div>
+                            <div class="col-lg-7">
+                                <h3>TP Hồ Chí Minh: Kích hoạt 40 trạm y tế lưu động và hình thành đội phản ứng nhanh</h3>
+                                <div class="info"><span class="text-muted">05/11/2021 22:43 (GMT+7)</span></div>
+                                <p>Ngày 5/11, Sở Y tế TP Hồ Chí Minh cho biết, trước việc số ca mắc COVID-19 mới mỗi ngày tăng, ngành y tế đã kích hoạt 40 trạm y tế lưu động và hình thành đội phản ứng nhanh.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Lưu Tấn Lĩnh</a></li>
+                        <li><a href="#">Vũ Thành Nhân</a></li>
+                        <li><a href="#">Trần Phi Long</a></li>
+                        <li><a href="#">Đỗ Duy Phương</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

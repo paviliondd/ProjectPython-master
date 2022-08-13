@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="/static/register.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ </head>
+ <body>
+ <div class="container-signup">
+   <div class="regis-box">
+    <div class="regis-body">
+    <span class ="signup-form-title">Sign Up</span>
+     <form action="{{ url_for('register') }}" method="post" autocomplete="off"> 
+        <div class="input1">
+         <input type="text" class="form-control" name="fullname" id="fullname"  placeholder="Enter your Name"required/>
+        </div>
+        <div class="input2">
+         <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"required/>
+       </div>
+ 
+        <div class="input3">
+         <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" required>
+        </div>
+ 
+        <div class="input4">
+         <input type="password" class="form-control" name="password" placeholder="Password" id="password" required  placeholder="Enter your Password"/>
+        </div>
+        <button type="submit" value="Register" class="submit-button22" name=""> Sign Up</button>
+        <div id="msg"></div>
+        <div class="bottom-form">
+        <a href="{{ url_for('login') }}" class="btn btn-dark ">Login</a></p>
+        </div>
+ </form>
+       
+      </div>
+    </div>
+   </div>
+  </div>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+ </body>
+</html>

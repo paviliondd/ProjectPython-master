@@ -1,0 +1,31 @@
+body {
+    background-color: #f9f9fa;
+}
+
+.padding {
+    padding: 5rem; 
+}
+
+
+.card-block {
+    padding: 1.25rem;
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.card .card-block p {
+    line-height: 25px;
+}
+
+
+.text-muted {
+    color: #919aa3;
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0;
+}
+

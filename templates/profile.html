@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Profile</title>
+	<link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/profile.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+	<link rel="stylesheet" href="assets/css/vanilla-zoom.min.css"> </head>
+
+<body>
+	<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+		<div class="container"> <a class="navbar-brand logo" href="{{ url_for('home') }}">Home</a> <a class="navbar-brand logo" href="{{ url_for('news') }}">News</a> <a class="navbar-brand logo" href="{{ url_for('profile') }}">Profile</a>
+			<div class="collapse navbar-collapse" id="navcol-1">
+				<ul class="navbar-nav ms-auto"></ul>
+			</div> <a class="navbar-brand logo" href="{{ url_for('logout') }}">Logout</a> </div>
+	</nav>
+	<main class="page blog-post-list">
+		<section class="clean-block clean-blog-list">
+			<div class="container">
+				<div class="page-content page-container" id="page-content">
+					<div class="padding">
+							<div class="card user-card-full">
+								<div class="row m-l-0 m-r-0">
+									<div class="card-block">
+										<h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+										<div class="row">
+											<div class="col-sm-6">
+												<p class="m-b-10 f-w-600">Email</p>
+												<h6 class="text-muted f-w-400">{{ account['email'] }}</h6> </div>
+											<div class="col-sm-6">
+												<p class="m-b-10 f-w-600">Fullname</p>
+												<h6 class="text-muted f-w-400">{{ account['fullname'] }}</h6> </div>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<p class="m-b-10 f-w-600">Username</p>
+												<h6 class="text-muted f-w-400">{{ account['username'] }}</h6> </div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Lưu Tấn Lĩnh</a></li>
+                        <li><a href="#">Vũ Thành Nhân</a></li>
+                        <li><a href="#">Trần Phi Long</a></li>
+                        <li><a href="#">Đỗ Nguyễn Duy Phương</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+	<script src="assets/js/vanilla-zoom.js"></script>
+	<script src="assets/js/theme.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>

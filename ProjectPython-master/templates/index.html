@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href='/static/login.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+  <link rel="stylesheet" href='/static/style.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ </head>
+<body>
+    <div class="container-login100">
+      <div class="wrap-login100" >
+        <div class="login-form">
+            <span class="login-form-title">Sign In </span>
+            <form class="form-group" action="{{ url_for('login') }}" method="post">
+                <div class = "input">
+                    <input type="text" class="form-control" name="username" placeholder="Username" id="username" required>
+                </div>
+                <div class = "input">
+                    <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
+                </div>
+                <button type="submit"class="submit-button22" >Sign In</button>
+            </form>
+            <div class="bottom-form">
+                <div id="msg"></div>
+                <p>Did you have an account? </p>
+                <a href="{{ url_for('register') }}">Sign Up Now</a>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
